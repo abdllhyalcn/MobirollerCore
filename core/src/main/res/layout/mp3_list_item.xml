@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="31dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/content_list_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/arrow_image"
+            android:layout_toEndOf="@+id/content_list_image"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:minHeight="30dp"
+            android:textColor="@color/white"
+            android:textSize="?attr/font_15"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+
+        <!-- Rightend Arrow -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/arrow_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:visibility="gone"
+            app:lottie_colorFilter="@color/white"
+            app:lottie_fileName="equalizer_bounce.json"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/content_layout"
+        android:id="@+id/divider"
+        android:background="@color/white"/>
+
+</RelativeLayout>

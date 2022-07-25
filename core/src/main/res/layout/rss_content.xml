@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rss_content_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.mobiroller.core.views.CustomHorizontalScrollView
+        android:id="@+id/rss_content_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f1ef">
+
+        <LinearLayout
+            android:id="@+id/rss_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rss_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/rss_content_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:transitionName="rssImage"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_image"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rss_content_inner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rss_image_layout"
+                android:layout_marginStart="13.3dp"
+                android:layout_marginEnd="13.3dp"
+                android:paddingTop="11.3dp"
+                android:paddingBottom="10dp"
+                android:descendantFocusability="blocksDescendants"
+                android:background="#90ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rss_content_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9.3dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="13.3dp"
+                    android:textColor="@color/black"
+                    android:textSize="?attr/font_173"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/rss_content_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="start"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="13.3dp"
+                    android:textColor="#a9a9a9"
+                    android:textStyle="bold"
+                    android:textSize="?attr/font_10"
+                    />
+
+                <com.mobiroller.core.views.VideoEnabledWebViewWithTouch
+                    android:id="@+id/rss_content_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="13dp"
+                    android:paddingEnd="13.3dp"
+                    android:background="#ffffff"
+                    android:textColor="#4f4f4f"
+                    android:focusableInTouchMode="true"
+                    android:textSize="?attr/font_16"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/rss_content_more_button"
+                android:layout_width="wrap_content"
+                android:minHeight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="?attr/font_15"
+                android:backgroundTint="#6EBB67"
+                style="@style/Widget.AppCompat.Button"
+                android:background="#6EBB67"
+                android:textColor="#ffffff"
+                android:paddingStart="20dip"
+                android:paddingEnd="20dip"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.mobiroller.core.views.CustomHorizontalScrollView>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_height="60dp"
+    android:layout_width="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:maxImageSize="60dp"
+    android:id="@+id/fab_button_badge"
+    app:fabCustomSize="60dp"
+    android:background="@color/transparent"
+    app:backgroundTint="@color/transparent"
+    app:rippleColor="@color/transparent"
+    android:tint="@color/transparent"
+    app:tint="@color/transparent"
+    style="@style/FloatingActionAppTheme"
+    android:backgroundTint="@color/transparent"
+    android:scaleType="centerCrop"
+    app:elevation="0dp"
+    app:pressedTranslationZ="0dp"
+    app:borderWidth="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

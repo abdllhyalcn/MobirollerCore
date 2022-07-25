@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="76.7dp"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/backgroundView"
+        android:layout_width="84.7dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#FF5358"
+        android:src="@drawable/icon_trash"/>
+
+    <RelativeLayout
+        android:id="@+id/foregroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/notification_image"
+                android:layout_width="77.4dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/notification_cirle"
+                    android:layout_width="37.2dp"
+                    android:layout_height="37.2dp"
+                    android:background="@drawable/notification_cirle_unselected"
+                    android:paddingBottom="9.2dp"
+                    android:paddingStart="7.9dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="9dp">
+
+                    <ImageView
+                        android:id="@+id/notification_is_read"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/shape_1"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="14dp"
+                android:paddingBottom="8dp"
+                android:layout_toEndOf="@+id/notification_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/notification_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:paddingEnd="16.7dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    android:textColor="#838486"
+                    android:textSize="?attr/font_133"/>
+
+                <TextView
+                    android:paddingStart="1dp"
+                    android:layout_below="@id/notification_message"
+                    android:paddingTop="5dp"
+                    android:id="@+id/notification_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:drawableStart="@drawable/forma_1"
+                    android:textSize="?attr/font_107"
+                    android:drawablePadding="4.6dp"
+                    android:gravity="center_vertical"
+                    android:text="22/22/2016"
+                    android:textColor="#838486"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

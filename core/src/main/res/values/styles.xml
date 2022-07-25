@@ -1,0 +1,210 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  coreui start  -->
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#b00020</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!--  coreui end  -->
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <!--
+        Splash activity theme for preview only
+    -->
+
+
+    <style name="AppCompatMenu" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/white</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+    <style name="AppCompatTransparent" parent="AppCompatMenu">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+
+
+    <style name="AppCompatTransparentFix" parent="AppCompatMenu">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+    </style>
+
+    <style name="InAppPurchaseAppCompatTransparent" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="FullNoTitle" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="NoActionBarNoStatusBar" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="MaterialComponentsNoActionBarNoStatusBar" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!-- Application theme. -->
+
+    <!-- Edit Text style for preview login layout -->
+
+
+    <!-- Navigation drawer style for preview slide menu -->
+
+
+    <style name="FontStyle">
+    </style>
+
+    <style name="FontStyle.Small">
+        <item name="font_87">@dimen/small_font_87</item>
+        <item name="font_93">@dimen/small_font_93</item>
+        <item name="font_10">@dimen/small_font_10</item>
+        <item name="font_107">@dimen/small_font_107</item>
+        <item name="font_113">@dimen/small_font_113</item>
+        <item name="font_12">@dimen/small_font_12</item>
+        <item name="font_13">@dimen/small_font_13</item>
+        <item name="font_133">@dimen/small_font_133</item>
+        <item name="font_14">@dimen/small_font_14</item>
+        <item name="font_147">@dimen/small_font_147</item>
+        <item name="font_15">@dimen/small_font_15</item>
+        <item name="font_153">@dimen/small_font_153</item>
+        <item name="font_16">@dimen/small_font_16</item>
+        <item name="font_17">@dimen/small_font_17</item>
+        <item name="font_173">@dimen/small_font_173</item>
+        <item name="font_18">@dimen/small_font_18</item>
+        <item name="font_187">@dimen/small_font_187</item>
+        <item name="font_19">@dimen/small_font_19</item>
+        <item name="font_20">@dimen/small_font_20</item>
+        <item name="font_24">@dimen/small_font_24</item>
+    </style>
+
+    <style name="FontStyle.Medium">
+        <item name="font_87">@dimen/font_87</item>
+        <item name="font_93">@dimen/font_93</item>
+        <item name="font_10">@dimen/font_10</item>
+        <item name="font_107">@dimen/font_107</item>
+        <item name="font_113">@dimen/font_113</item>
+        <item name="font_12">@dimen/font_12</item>
+        <item name="font_13">@dimen/font_13</item>
+        <item name="font_133">@dimen/font_133</item>
+        <item name="font_14">@dimen/font_14</item>
+        <item name="font_147">@dimen/font_147</item>
+        <item name="font_15">@dimen/font_15</item>
+        <item name="font_153">@dimen/font_153</item>
+        <item name="font_16">@dimen/font_16</item>
+        <item name="font_17">@dimen/font_17</item>
+        <item name="font_173">@dimen/font_173</item>
+        <item name="font_18">@dimen/font_18</item>
+        <item name="font_187">@dimen/font_187</item>
+        <item name="font_19">@dimen/font_19</item>
+        <item name="font_20">@dimen/font_20</item>
+        <item name="font_24">@dimen/font_24</item>
+    </style>
+    <style name="FontStyle.Large">
+        <item name="font_87">@dimen/big_font_87</item>
+        <item name="font_93">@dimen/big_font_93</item>
+        <item name="font_10">@dimen/big_font_10</item>
+        <item name="font_107">@dimen/big_font_107</item>
+        <item name="font_113">@dimen/big_font_113</item>
+        <item name="font_12">@dimen/big_font_12</item>
+        <item name="font_13">@dimen/big_font_13</item>
+        <item name="font_133">@dimen/big_font_133</item>
+        <item name="font_14">@dimen/big_font_14</item>
+        <item name="font_147">@dimen/big_font_147</item>
+        <item name="font_15">@dimen/big_font_15</item>
+        <item name="font_153">@dimen/big_font_153</item>
+        <item name="font_16">@dimen/big_font_16</item>
+        <item name="font_17">@dimen/big_font_17</item>
+        <item name="font_173">@dimen/big_font_173</item>
+        <item name="font_18">@dimen/big_font_18</item>
+        <item name="font_187">@dimen/big_font_187</item>
+        <item name="font_19">@dimen/big_font_19</item>
+        <item name="font_20">@dimen/big_font_20</item>
+        <item name="font_24">@dimen/big_font_24</item>
+    </style>
+    <style name="FontStyle.XLarge">
+        <item name="font_87">@dimen/very_big_font_87</item>
+        <item name="font_93">@dimen/very_big_font_93</item>
+        <item name="font_10">@dimen/very_big_font_10</item>
+        <item name="font_107">@dimen/very_big_font_107</item>
+        <item name="font_113">@dimen/very_big_font_113</item>
+        <item name="font_12">@dimen/very_big_font_12</item>
+        <item name="font_13">@dimen/very_big_font_13</item>
+        <item name="font_133">@dimen/very_big_font_133</item>
+        <item name="font_14">@dimen/very_big_font_14</item>
+        <item name="font_147">@dimen/very_big_font_147</item>
+        <item name="font_15">@dimen/very_big_font_15</item>
+        <item name="font_153">@dimen/very_big_font_153</item>
+        <item name="font_16">@dimen/very_big_font_16</item>
+        <item name="font_17">@dimen/very_big_font_17</item>
+        <item name="font_173">@dimen/very_big_font_173</item>
+        <item name="font_18">@dimen/very_big_font_18</item>
+        <item name="font_187">@dimen/very_big_font_187</item>
+        <item name="font_19">@dimen/very_big_font_19</item>
+        <item name="font_20">@dimen/very_big_font_20</item>
+        <item name="font_24">@dimen/very_big_font_24</item>
+    </style>
+
+
+    <style name="DragDismissTheme.Base" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="DragDismissTheme" parent="DragDismissTheme.Base">
+
+    </style>
+
+
+    <style name="tw__TweetLightStyle">
+        <item name="tw__container_bg_color">@color/tw__tweet_light_container_bg_color</item>
+        <item name="tw__primary_text_color">@color/tw__tweet_light_primary_text_color</item>
+        <item name="tw__action_color">@color/tw__tweet_action_color</item>
+        <item name="tw__action_highlight_color">@color/tw__tweet_action_light_highlight_color</item>
+    </style>
+    <style name="tw__TweetLightWithActionsStyle" parent="tw__TweetLightStyle">
+        <item name="tw__tweet_actions_enabled">true</item>
+    </style>
+
+</resources>

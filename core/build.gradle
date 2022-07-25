@@ -1,0 +1,197 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'com.jakewharton.butterknife'
+    id 'kotlin-kapt'
+    id 'maven-publish'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'abdllhyalcn'
+                artifactId = 'mobirollerCore'
+                version = '0.0.1'
+            }
+        }
+    }
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 31
+
+        //todo check usages and remove
+        versionCode 1
+        versionName "1.0"
+
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+        consumerProguardFiles "consumer-rules.pro"
+
+        buildConfigField("String", "BASE_URL", "\"https://myapi.mobiroller.com/\"")
+        buildConfigField("String", "APPLYZE_BASE_URL", "\"https://mobiroller.api.applyze.com/\"")
+        buildConfigField("String", "SHOPIROLLER_BASE_URL", "\"https://api.shopiroller.com/\"")
+        buildConfigField("String", "FLURRY_APP_KEY", "\"Z547SPJCM92CBNB8HPG8\"")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        //If you want to continue even if errors found use following line
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "8g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/rxjava.properties'
+        pickFirst 'META-INF/INDEX.LIST'
+        pickFirst 'META-INF/LICENSE'
+        pickFirst 'META-INF/io.netty.versions.properties'
+        exclude 'META-INF/*.kotlin_module' // blesh
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+
+    implementation "androidx.core:core-ktx:1.7.0"
+    implementation "androidx.appcompat:appcompat:1.1.0"
+    implementation "com.google.android.material:material:1.2.1"
+    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "androidx.media:media:1.6.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.percentlayout:percentlayout:1.0.0"
+    implementation "androidx.browser:browser:1.4.0"
+    implementation "com.android.support:design:28.0.0"
+
+    implementation "com.google.android.gms:play-services-ads:16.0.0"
+    implementation "com.google.android.gms:play-services-maps:18.0.2"
+    implementation "com.google.android.gms:play-services-analytics:18.0.1"
+    implementation "com.google.firebase:firebase-core:16.0.7"
+
+    //old youtube
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'com.github.rometools.rome:rome:v1.7.0'
+
+    implementation "com.google.code.gson:gson:2.8.6"
+    implementation "com.afollestad.material-dialogs:core:0.9.4.3"
+    implementation "com.afollestad.material-dialogs:commons:0.9.4.3"
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    implementation 'com.facebook.shimmer:shimmer:0.4.0@aar'
+    implementation 'br.com.simplepass:loading-button-android:1.7.2'
+
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+    implementation "com.google.dagger:dagger:2.21"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.21"
+    kapt "com.google.dagger:dagger-compiler:2.21"
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    kapt 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'me.zhanghai.android.materialratingbar:library:1.0.2'
+    implementation 'com.wdullaer:materialdatetimepicker:3.2.2'
+    implementation 'com.github.CanHub:Android-Image-Cropper:3.1.3'
+
+    implementation('com.airbnb.android:lottie:4.1.0')
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.0'
+    implementation 'com.google.android.exoplayer:extension-okhttp:2.11.0'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.11.0'
+
+    // Webview library
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.2.0'
+    implementation('com.applyze:sdk:1.0.0-alpha.30@aar') {
+        transitive = true
+        exclude group: 'com.android.support'
+        exclude group: 'com.google.android.gms'
+    }
+
+    // Firebase
+    implementation 'com.firebaseui:firebase-ui:5.0.0'
+
+    //Run Time Permission Helper
+    implementation("org.permissionsdispatcher:permissionsdispatcher:4.8.0") {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    annotationProcessor "org.permissionsdispatcher:permissionsdispatcher-processor:4.8.0"
+    kapt "org.permissionsdispatcher:permissionsdispatcher-processor:4.8.0"
+
+    implementation "com.google.api-client:google-api-client:1.30.0"
+    implementation('com.google.api-client:google-api-client-android:1.30.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+
+    //old youtube
+    implementation('com.google.apis:google-api-services-youtube:v3-rev212-1.25.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+
+    //old youtube
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:8.0.1'
+
+    implementation 'com.nightonke:boommenu:2.1.1'
+
+    implementation('com.twitter.sdk.android:tweet-ui:3.3.0@aar') {
+        transitive = true
+    }
+
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'io.paperdb:paperdb:2.7.1'
+
+    implementation "com.android.support:multidex:1.0.3"
+    implementation "com.github.ybq:Android-SpinKit:1.2.0"
+
+    implementation "com.anjlab.android.iab.v3:library:2.0.0"
+}

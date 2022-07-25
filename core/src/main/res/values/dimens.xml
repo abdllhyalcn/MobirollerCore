@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="buttonPadding">16dp</dimen>
+
+    <!-- rss item sizes -->
+    <dimen name="rss_header_height">246.7dp</dimen>
+    <dimen name="rss_header_item_height">200dp</dimen>
+    <dimen name="rss_header_item_text_height">46.7dp</dimen>
+    <dimen name="rss_slider_height">290dp</dimen>
+    <dimen name="rss_slider_indicator_height">10.7dp</dimen>
+    <dimen name="rss_slider_indicator_item_height">10.3dp</dimen>
+    <dimen name="rss_classic_item_height">100dp</dimen>
+    <dimen name="rss_square_featured_item_height">266.7dp</dimen>
+    <dimen name="rss_square_featured_item_gradient_height">133.3dp</dimen>
+    <dimen name="rss_full_image_layout_item_height">176.7dp</dimen>
+    <dimen name="rss_full_image_item_height">106.7dp</dimen>
+    <dimen name="rss_full_title_layout_item_height">56.7dp</dimen>
+    <dimen name="rss_full_date_item_height">23.3dp</dimen>
+    <dimen name="rss_full_title_item_height">38dp</dimen>
+    <dimen name="rss_classic_no_image_item_height">100dp</dimen>
+    <dimen name="rss_slider_indicator_top_margin_height">13.3dp</dimen>
+    <integer name="youtube_layout_1">100</integer>
+    <integer name="youtube_layout_3">267</integer>
+    <integer name="youtube_layout_4">236</integer>
+    <integer name="youtube_layout_5">180</integer>
+    <integer name="youtube_layout_6">170</integer>
+
+    <integer name="rss_layout_1">177</integer>
+    <integer name="rss_layout_2">100</integer>
+    <integer name="rss_layout_4">267</integer>
+    <integer name="rss_layout_5">140</integer>
+
+
+
+    <!-- youtube item sizes -->
+    <dimen name="youtube_type_one_image_height">100dp</dimen>
+    <dimen name="youtube_type_two_image_height">266.7dp</dimen>
+    <dimen name="youtube_type_three_height">236dp</dimen>
+    <dimen name="youtube_type_four_height">180dp</dimen>
+    <dimen name="youtube_type_five_height">170dp</dimen>
+    <dimen name="youtube_type_ads_height">200dp</dimen>
+    <dimen name="youtube_type_ads_logo_height">66.7dp</dimen>
+    <dimen name="youtube_type_ads_main_height">93.3dp</dimen>
+    <dimen name="youtube_type_ads_main_full_image_height">163.4dp</dimen>
+    <dimen name="youtube_type_ads_main_full_header_height">63.7dp</dimen>
+    <dimen name="youtube_type_ads_main_full_button_height">20dp</dimen>
+    <dimen name="youtube_type_ads_main_square_height">140dp</dimen>
+    <dimen name="youtube_type_ads_main_square_image_height">110dp</dimen>
+    <dimen name="youtube_type_ads_main_square_header_height">30dp</dimen>
+    <dimen name="youtube_type_ads_main_square_title_height">40dp</dimen>
+    <dimen name="youtube_type_ads_full_height">157.8dp</dimen>
+    <dimen name="youtube_type_ads_type_three_image_height">172.7dp</dimen>
+    <dimen name="youtube_type_ads_type_five_image_height">130dp</dimen>
+    <dimen name="youtube_type_ads_type_five_header_height">50dp</dimen>
+
+
+    <!-- twitter item sizes -->
+
+    <!-- splash -->
+
+    <!-- preview slide menu -->
+
+    <!-- small font size-->
+    <dimen name="small_font_87">6.7sp</dimen>
+    <dimen name="small_font_93">7.3sp</dimen>
+    <dimen name="small_font_10">8sp</dimen>
+    <dimen name="small_font_107">8.7sp</dimen>
+    <dimen name="small_font_113">8.3sp</dimen>
+    <dimen name="small_font_12">10sp</dimen>
+    <dimen name="small_font_133">11.3sp</dimen>
+    <dimen name="small_font_13">11sp</dimen>
+    <dimen name="small_font_14">12sp</dimen>
+    <dimen name="small_font_147">12.7sp</dimen>
+    <dimen name="small_font_15">13sp</dimen>
+    <dimen name="small_font_153">13.3sp</dimen>
+    <dimen name="small_font_16">14sp</dimen>
+    <dimen name="small_font_17">15sp</dimen>
+    <dimen name="small_font_173">15.3sp</dimen>
+    <dimen name="small_font_18">16sp</dimen>
+    <dimen name="small_font_187">16.7sp</dimen>
+    <dimen name="small_font_19">17sp</dimen>
+    <dimen name="small_font_20">18sp</dimen>
+    <dimen name="small_font_24">22sp</dimen>
+
+    <!-- normal font size -->
+    <dimen name="font_87">8.7sp</dimen>
+    <dimen name="font_93">9.3sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_107">10.7sp</dimen>
+    <dimen name="font_113">11.3sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_133">13.3sp</dimen>
+    <dimen name="font_13">13sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_147">14.7sp</dimen>
+    <dimen name="font_15">15sp</dimen>
+    <dimen name="font_153">15.3sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_17">17sp</dimen>
+    <dimen name="font_173">17.3sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_187">18.7sp</dimen>
+    <dimen name="font_19">19sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_32">32sp</dimen>
+    <dimen name="font_40">40sp</dimen>
+
+    <!-- big font size -->
+    <dimen name="big_font_87">12.7sp</dimen>
+    <dimen name="big_font_93">13.3sp</dimen>
+    <dimen name="big_font_10">14sp</dimen>
+    <dimen name="big_font_107">14.7sp</dimen>
+    <dimen name="big_font_113">15.3sp</dimen>
+    <dimen name="big_font_12">16sp</dimen>
+    <dimen name="big_font_13">17sp</dimen>
+    <dimen name="big_font_133">17.3sp</dimen>
+    <dimen name="big_font_14">18sp</dimen>
+    <dimen name="big_font_147">18.7sp</dimen>
+    <dimen name="big_font_15">19sp</dimen>
+    <dimen name="big_font_153">19.3sp</dimen>
+    <dimen name="big_font_16">20sp</dimen>
+    <dimen name="big_font_17">21sp</dimen>
+    <dimen name="big_font_173">21.3sp</dimen>
+    <dimen name="big_font_18">22sp</dimen>
+    <dimen name="big_font_187">22.7sp</dimen>
+    <dimen name="big_font_19">23sp</dimen>
+    <dimen name="big_font_20">24sp</dimen>
+    <dimen name="big_font_24">28sp</dimen>
+
+    <!-- very big font size -->
+
+    <dimen name="very_big_font_87">16.7sp</dimen>
+    <dimen name="very_big_font_93">17.3sp</dimen>
+    <dimen name="very_big_font_10">18sp</dimen>
+    <dimen name="very_big_font_107">18.7sp</dimen>
+    <dimen name="very_big_font_113">19.3sp</dimen>
+    <dimen name="very_big_font_12">20sp</dimen>
+    <dimen name="very_big_font_13">21sp</dimen>
+    <dimen name="very_big_font_133">21.3sp</dimen>
+    <dimen name="very_big_font_14">22sp</dimen>
+    <dimen name="very_big_font_147">22.7sp</dimen>
+    <dimen name="very_big_font_15">23sp</dimen>
+    <dimen name="very_big_font_153">23.3sp</dimen>
+    <dimen name="very_big_font_16">24sp</dimen>
+    <dimen name="very_big_font_17">25sp</dimen>
+    <dimen name="very_big_font_173">25.3sp</dimen>
+    <dimen name="very_big_font_18">26sp</dimen>
+    <dimen name="very_big_font_187">26.7sp</dimen>
+    <dimen name="very_big_font_19">27sp</dimen>
+    <dimen name="very_big_font_20">28sp</dimen>
+    <dimen name="very_big_font_24">32sp</dimen>
+
+    <dimen name="header_view_start_margin_left">16dp</dimen>
+    <dimen name="header_view_end_margin_left">40dp</dimen>
+    <dimen name="header_view_end_margin_right">14dp</dimen>
+    <dimen name="header_view_start_margin_bottom">14dp</dimen>
+    <dimen name="header_view_start_text_size">32sp</dimen>
+    <dimen name="header_view_end_text_size">18sp</dimen>
+
+    <dimen name="touch_default">45dp</dimen>
+    <dimen name="icon_with">65dp</dimen>
+    <dimen name="text_size">10sp</dimen>
+
+
+    <dimen name="default_bmb_text_inside_circle_width">80dp</dimen>
+    <dimen name="default_bmb_text_inside_circle_height">80dp</dimen>
+</resources>

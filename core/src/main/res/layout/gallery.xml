@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/gallery_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+            <com.mobiroller.core.views.twowayview.TwoWayView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/gallery_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:twowayview_layoutManager="StaggeredGridLayoutManager"
+                app:twowayview_numColumns="6"
+                app:twowayview_numRows="2"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/view_pager_main_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/view_pager_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/relativeLayout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/view_pager"
+                                app:layout_constraintDimensionRatio="H,1.375:1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/viewPagerIndicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/rss_slider_indicator_height"
+                            android:layout_below="@id/relativeLayout4"
+                            android:layout_marginTop="-25dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/viewPagerCountDots"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:orientation="horizontal" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/in_app_purchase_detail_gradient" />
+
+                    <ImageView
+                        android:id="@+id/back_button"
+                        app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+                        android:layout_width="43dp"
+                        android:layout_height="58dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="35dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_pager_main_layout"
+                    android:layout_marginTop="19dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.01"
+                    android:maxLines="2"
+                    android:text="For Beginners Exercise Program"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginTop="11.5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:maxHeight="120dp"
+                    android:maxLines="5"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                    android:textColor="#989898"
+                    android:textSize="15sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/packages_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/description"
+                    android:layout_above="@+id/actions"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/subscription_layout"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="120dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintRight_toLeftOf="@id/one_time_layout"
+                        android:visibility="gone"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/subscription_button"
+                            android:layout_width="114dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="3dp"
+                            android:padding="4dp"
+                            android:src="@drawable/in_app_purchase_plan_selected"
+                            android:textAllCaps="false" />
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="7dp"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:paddingTop="42dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/subscription_period"
+                                android:layout_width="match_parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="5sp"
+                                android:text="1 Month"
+                                android:textColor="#000000"
+                                android:maxLines="1"
+                                app:autoSizeTextType="uniform"
+                                android:textSize="13sp"
+                                android:textStyle="normal" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/subscription_price_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/subscription_period"
+                                android:gravity="center"
+                                app:layout_constraintTop_toBottomOf="@id/subscription_period"
+                                app:layout_constraintBottom_toTopOf="@id/subscription_description_text"
+                                android:lineSpacingExtra="-2sp"
+                                android:text="$123456.99"
+                                android:maxLines="1"
+                                app:autoSizeTextType="uniform"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/subscription_description_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="sans-serif"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="5sp"
+                                android:text="@string/in_app_purchase_subscription"
+                                android:textColor="#80000000"
+                                android:maxLines="1"
+                                app:autoSizeTextType="uniform"
+                                android:textSize="13sp"
+                                android:textStyle="normal" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/one_time_layout"
+                        android:layout_width="120dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_height="120dp"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/subscription_layout"
+                        android:visibility="gone"
+                        android:layout_toEndOf="@id/subscription_layout">
+
+                        <ImageView
+
+                            android:id="@+id/one_time_button"
+                            android:layout_width="114dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="3dp"
+                            android:padding="4dp"
+                            android:src="@drawable/in_app_purchase_plan_unselected"
+                            android:textAllCaps="false">
+
+                        </ImageView>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="7dp"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:paddingTop="42dp">
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/life_time_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="5sp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:maxLines="1"
+                                app:autoSizeTextType="uniform"
+                                android:text="@string/in_app_purchase_life_time"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:textStyle="normal" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/life_time_price_text"
+                                android:layout_width="match_parent"
+                                app:layout_constraintTop_toBottomOf="@id/life_time_text"
+                                app:layout_constraintBottom_toTopOf="@id/life_time_description_text"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/life_time_text"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:lineSpacingExtra="-2sp"
+                                android:text="$8.99"
+                                app:autoSizeTextType="uniform"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/life_time_description_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="sans-serif"
+                                android:maxLines="1"
+                                app:autoSizeTextType="uniform"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="5sp"
+                                android:text="@string/in_app_purchase_one_payment"
+                                android:textColor="#80000000"
+                                android:textSize="13sp"
+                                android:textStyle="normal" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </RelativeLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:id="@+id/actions"
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center|bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/action_buttons_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingStart="25dp"
+                        android:paddingEnd="25dp">
+
+                        <Button
+                            android:id="@+id/detail_action_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="7.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/in_app_purchase_view_pager_item_detail_radius"
+                            android:gravity="center"
+                            android:lineSpacingExtra="3sp"
+                            android:text="@string/in_app_purchase_more_information"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/buy_action_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="7.5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/in_app_purchase_view_pager_item_buy_radius"
+                            android:lineSpacingExtra="3sp"
+                            android:text="@string/in_app_purchase_buy_it"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                    <Space
+                        android:id="@+id/space"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/primary_dark"
+        android:layout_height="60dp">
+
+       <TextView
+           android:id="@+id/button_done"
+           android:layout_width="100dp"
+           android:textColor="@color/white"
+           android:gravity="center"
+           android:text="Done"
+           android:textSize="18sp"
+           android:layout_height="match_parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:text="App List"
+            android:textSize="19sp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/button_reset"
+            android:layout_width="100dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="Reset"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

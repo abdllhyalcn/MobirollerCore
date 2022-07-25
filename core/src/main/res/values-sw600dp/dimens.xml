@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- rss item sizes -->
+	<dimen name="rss_header_height">493.4dp</dimen>
+	<dimen name="rss_header_item_height">400dp</dimen>
+	<dimen name="rss_header_item_text_height">93.4dp</dimen>
+	<dimen name="rss_slider_height">560dp</dimen>
+	<dimen name="rss_slider_indicator_height">21.4dp</dimen>
+	<dimen name="rss_slider_indicator_item_height">15.6dp</dimen>
+	<dimen name="rss_classic_item_height">200dp</dimen>
+	<dimen name="rss_square_featured_item_height">533.4dp</dimen>
+	<dimen name="rss_square_featured_item_gradient_height">266.7dp</dimen>
+	<dimen name="rss_full_image_layout_item_height">353.4dp</dimen>
+	<dimen name="rss_full_image_item_height">213.4dp</dimen>
+	<dimen name="rss_full_title_layout_item_height">113.4dp</dimen>
+	<dimen name="rss_full_date_item_height">46.6dp</dimen>
+	<dimen name="rss_full_title_item_height">76dp</dimen>
+	<dimen name="rss_classic_no_image_item_height">120dp</dimen>
+	<dimen name="rss_slider_indicator_top_margin_height">20.6dp</dimen>
+	<integer name="rss_layout_5">280</integer>
+
+	<integer name="youtube_layout_1">200</integer>
+	<integer name="youtube_layout_3">534</integer>
+	<integer name="youtube_layout_4">472</integer>
+	<integer name="youtube_layout_5">360</integer>
+	<integer name="youtube_layout_6">340</integer>
+
+	<integer name="rss_layout_1">354</integer>
+	<integer name="rss_layout_2">200</integer>
+	<integer name="rss_layout_4">534</integer>
+
+	<!-- youtube item sizes -->
+	<dimen name="youtube_type_one_image_height">200dp</dimen>
+    <dimen name="youtube_type_two_image_height">533.4dp</dimen>
+	<dimen name="youtube_type_three_height">472dp</dimen>
+    <dimen name="youtube_type_four_height">360dp</dimen>
+	<dimen name="youtube_type_five_height">340dp</dimen>
+
+    <dimen name="youtube_type_ads_height">400dp</dimen>
+	<dimen name="youtube_type_ads_logo_height">133.4dp</dimen>
+    <dimen name="youtube_type_ads_main_height">186.6dp</dimen>
+	<dimen name="youtube_type_ads_main_full_image_height">326.8dp</dimen>
+	<dimen name="youtube_type_ads_main_full_header_height">127.4dp</dimen>
+	<dimen name="youtube_type_ads_main_full_button_height">40dp</dimen>
+	<dimen name="youtube_type_ads_main_square_height">280dp</dimen>
+	<dimen name="youtube_type_ads_main_square_image_height">220dp</dimen>
+	<dimen name="youtube_type_ads_main_square_header_height">60dp</dimen>
+	<dimen name="youtube_type_ads_main_square_title_height">80dp</dimen>
+	<dimen name="youtube_type_ads_full_height">315.6dp</dimen>
+	<dimen name="youtube_type_ads_type_three_image_height">343.4dp</dimen>
+	<dimen name="youtube_type_ads_type_five_image_height">260dp</dimen>
+	<dimen name="youtube_type_ads_type_five_header_height">100dp</dimen>
+</resources>

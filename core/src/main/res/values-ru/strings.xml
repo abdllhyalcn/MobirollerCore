@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="OK">хорошо</string>
+    <string name="form_module_action_send">отправлять</string>
+    <string name="common_error">К сожалению, что-то пошло не так. Пожалуйста, повторите попытку позже</string>
+    <string name="yes">да</string>
+    <string name="please_check_your_internet_connection">Пожалуйста, проверьте ваше интернет-соединение</string>
+    <string name="failed">неправильный</string>
+    <string name="cancel">Отмена</string>
+    <string name="change_language">Изменить язык</string>
+    <string name="app_notifications">Уведомления</string>
+    <string name="notification_sound">звуковое оповещение</string>
+    <string name="locale">ru</string>
+
+</resources>

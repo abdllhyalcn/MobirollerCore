@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rss_square_featured_item_height"
+                android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/rss_list_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rss_square_featured_item_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image"
+            android:transitionName="rssImage"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rss_square_featured_item_gradient_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rss_image_gradient"
+            android:orientation="vertical"
+            android:paddingBottom="11.3dp"
+            android:paddingStart="13.3dp"
+            android:paddingEnd="13.3dp">
+
+            <TextView
+                android:id="@+id/rss_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/rss_list_date"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="?attr/font_16"
+                android:textStyle="bold"
+                app:layout_widthPercent="50%"/>
+
+            <TextView
+                android:id="@+id/rss_list_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:textSize="?attr/font_93"/>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/rss_arrow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/list_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/rss_list_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

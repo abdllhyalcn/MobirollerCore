@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="web_module_redirecting_for_download">Weiterleitung zum Download</string>
+    <string name="OK">OK</string>
+    <string name="form_module_action_send">Senden</string>
+    <string name="notification_dialog_positive_button">Details anzeigen</string>
+    <string name="common_error">Sorry, etwas ist schief gelaufen. Bitte versuche es später noch einmal</string>
+    <string name="yes">Ja</string>
+    <string name="please_check_your_internet_connection">Bitte überprüfe deine Internetverbindung</string>
+    <string name="failed">Gescheitert</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="please_check_your_stream_link">Dein Stream-Link ist defekt oder das Stream-Format wird nicht unterstützt.</string>
+    <string name="remove">entfernen</string>
+    <string name="time_just_now">Gerade jetzt</string>
+    <string name="time_a_minute_ago">Vor 1 Minute</string>
+    <string name="time_minute_ago">vor einer Minute</string>
+    <string name="time_an_hour_ago">Vor 1 Stunde</string>
+    <string name="time_hours_ago">vor Stunden</string>
+    <string name="time_yesterday">Gestern</string>
+    <string name="time_a_week_ago">vor 1 Woche</string>
+    <string name="time_weeks_ago">vor Wochen</string>
+    <string name="time_a_month_ago">vor 1 Monat</string>
+    <string name="time_months_ago">vor Monaten</string>
+    <string name="time_a_year_ago">vor 1 Jahr</string>
+    <string name="time_years_ago">vor Jahren</string>
+    <string name="time_day_ago">vor 1 Tag</string>
+    <string name="time_days_ago">vor Tagen</string>
+    <string name="action_share">Teilen</string>
+    <string name="action_more">Mehr lesen</string>
+    <string name="action_download">Herunterladen</string>
+    <string name="date_today">Heute</string>
+    <string name="date_yesterday">Gestern</string>
+    <string name="favorite_not_found">Kein Datensatz gefunden</string>
+    <string name="action_close_app">Bist du sicher, dass du aussteigen willst?</string>
+    <string name="feedback_sent">Dein Feedback wurde gesendet.</string>
+    <string name="rating_dialog_experience">Wie war dein Erlebnis mit uns?</string>
+    <string name="rating_dialog_remind_later">Erinnere mich später</string>
+    <string name="rating_dialog_never">Nie</string>
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="rating_dialog_submit">Abschicken</string>
+    <string name="rating_dialog_cancel">Abbrechen</string>
+    <string name="rating_dialog_suggestions">Sag uns, wie wir uns verbessern können?</string>
+    <string name="change_language">Sprache ändern</string>
+    <string name="app_notifications">Benachrichtigungen</string>
+    <string name="notification_sound">Benachrichtigungston</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="app_version">App-Version</string>
+    <string name="settings_saved">Deine Einstellungen sind gespeichert.</string>
+
+<!--  todo need translate   -->
+    <!--    -->
+
+    <string name="not_supported_on_preview">Diese Funktion wird von der Preview App nicht unterstützt. Bitte generiere eine APK-Datei und installiere sie auf deinem Gerät.</string>
+    <string name="advertisement">Werbung</string>
+    <string name="ad">Anzeige</string>
+    <string name="wifi_settings">Wi-Fi-Einstellungen</string>
+    <string name="mobile_settings">Mobile Daten</string>
+    <string name="try_again">Erneut versuchen</string>
+    <string name="connection_required_error">Keine Internetverbindung</string>
+    <string name="required_field">Erforderliches Feld</string>
+    <string name="success">Erfolg</string>
+    <string name="form_success">Formular erfolgreich abgeschickt.</string>
+    <string name="form_failed">Das Formular konnte nicht gesendet werden.</string>
+    <string name="send_email">E-Mail senden</string>
+    <string name="make_a_choice">Bitte wähle etwas aus</string>
+    <string name="select_a_date">Bitte wähle ein Datum</string>
+    <string name="select_a_time">Bitte wähle eine Zeit</string>
+    <string name="text_validation_message">Bitte fülle dieses Feld aus</string>
+
+    <!--  todo need translate  -->
+    <!--    -->
+
+    <string name="text_size_small">Klein</string>
+    <string name="text_size_medium">Normal</string>
+    <string name="text_size_big">Groß</string>
+    <string name="text_size_very_big">Sehr groß</string>
+    <string name="application_restart_info">Die Anwendung wird neu gestartet, um neue Änderungen zu übernehmen</string>
+    <string name="change_font_size">Schriftgröße</string>
+    <string name="content_change_font_size">Schriftgröße des Inhalts ändern</string>
+    <string name="image_size_validation">Die Bildgröße darf nicht größer als 2,5 MB sein.</string>
+    <string name="logout_dialog">Bist du sicher, dass du dich abmelden willst?</string>
+    <string name="no_message_available">Keine Nachricht vorhanden</string>
+    <string name="new_report_push">Neuer Bericht erstellt.</string>
+    <string name="ban_push">Du wurdest von der Anwendungsbehörde für den Chat gesperrt.</string>
+    <string name="unban_push">Du wurdest von der Anwendungsbehörde für den Chat freigegeben.</string>
+    <string name="authority_push">Dir wurde eine Berechtigung zugewiesen.</string>
+    <string name="authority_revoke_push">Deine Berechtigung wurde widerrufen.</string>
+    <string name="firebase_validation_failed">Die Validierung der Chat-Einstellungen ist fehlgeschlagen.</string>
+    <string name="permission_storage_denied_download">Ohne Speichererlaubnis kannst du die Datei nicht herunterladen.</string>
+    <string name="permission_storage_denied_download_never">Ohne Speichererlaubnis kannst du die Datei nicht herunterladen. Diese Erlaubnis kann in den Einstellungen aktiviert werden.</string>
+    <string name="permission_storage_denied_ss">Ohne Speichererlaubnis kannst du keinen Screenshot machen.</string>
+    <string name="permission_storage_denied_ss_never">Ohne Speichererlaubnis kannst du keinen Screenshot machen. Diese Erlaubnis kannst du in den Einstellungen aktivieren.</string>
+    <string name="permission_location_denied_map_user_location">Ohne die Standortgenehmigung kannst du deinen Standort nicht sehen.</string>
+    <string name="permission_location_denied_map_user_location_never">Ohne Standortgenehmigung kannst du deinen Standort nicht sehen. Diese Berechtigung kann in den Einstellungen aktiviert werden.</string>
+    <string name="permission_location_denied_webview_user_location_never">Einige Funktionen sind ohne Standortgenehmigung nicht verfügbar. Diese Erlaubnis kann in den Einstellungen aktiviert werden.</string>
+    <string name="permission_settings">Gehe zu Berechtigungen</string>
+    <string name="permission_required">Erlaubnis erforderlich!</string>
+    <string name="permission_required_description">Die Anwendung %1$s benötigt die Speichererlaubnis, um deine persönlichen Daten auf deinem Gerät zu speichern, damit die Anwendung bei minimalem Datentransfer optimal funktioniert. Um die Anwendung nutzen zu können, musst du auf diese Berechtigung zugreifen können. Es ist absolut sicher, diesen Zugriff zu aktivieren.</string>
+    <string name="action_search">Suche</string>
+    <string name="action_save">Speichern</string>
+    <string name="notification_music">Musik-Kanäle</string>
+    <string name="channel_detail_description">Beschreibung</string>
+
+    <!--  todo need translate  -->
+    <!--    -->
+
+    <string name="user_agreement_settings">Nutzungsvereinbarung</string>
+    <string name="in_app_purchase_not_available">Die In-App-Kauffunktion ist auf diesem Gerät nicht verfügbar. Stelle sicher, dass du die neueste Version des Google Play Store installiert hast.</string>
+    <string name="in_app_purchase_subscription">Abonnement</string>
+    <string name="in_app_purchase_one_payment">Einmalige Zahlung</string>
+    <string name="in_app_purchase_life_time">Lebenslang</string>
+    <string name="in_app_purchase_more_information">Mehr Informationen</string>
+    <string name="in_app_purchase_buy_it">Kaufen</string>
+    <string name="in_app_purchase_more">Mehr</string>
+    <string name="in_app_purchase_period_month">%1$s Monat</string>
+    <string name="in_app_purchase_period_week">%1$s Woche</string>
+    <string name="in_app_purchase_period_yearly">Jährlich</string>
+    <string name="in_app_purchase_title">In-App-Kauf</string>
+    <string name="in_app_purchase_description">Du kannst die Details sehen, indem du eine der folgenden Optionen auswählst, und du kannst bezahlen</string>
+    <string name="info_module_not_supported_on_preview">%1$s Modul wird in der Vorschau-App nicht unterstützt</string>
+    <string name="chat_module">Chat</string>
+    <string name="ecommerce_module">E-Commerce</string>
+    <string name="chat_action_invalid_account">Dieses Konto ist nicht für die Chat-Funktion geeignet</string>
+    <string name="field_required">%s ist erforderlich</string>
+    <string name="pdf_version_message">Dieser Inhalt wird auf Geräten unter Android Version 5 (Lollipop) nicht unterstützt. Klicke auf "OK", um den Inhalt im PDF-Format herunterzuladen.</string>
+    <string name="locale">de</string>
+
+    <!-- todo translate -->
+    <!---->
+
+</resources>

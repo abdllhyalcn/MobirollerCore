@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/twitter_relative_overlay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/twitter_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/twitter_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:dividerHeight="0px"
+                android:drawSelectorOnTop="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scrollingCache="true"
+                android:smoothScrollbar="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

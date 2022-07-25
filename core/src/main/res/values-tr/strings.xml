@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="web_module_redirecting_for_download">İndirmek İçin Yönlendiriliyor</string>
+    <string name="OK">Tamam</string>
+    <string name="form_module_action_send">Gönder</string>
+    <string name="notification_dialog_positive_button">İncele</string>
+    <string name="common_error">Üzgünüz, bir hata oluştu. Lütfen daha sonra tekrar deneyin</string>
+    <string name="yes">Evet</string>
+    <string name="please_check_your_internet_connection">Lütfen internet bağlantınızı kontrol edin</string>
+    <string name="failed">Hata</string>
+    <string name="cancel">Vazgeç</string>
+
+    <string name="please_check_your_stream_link">Canlı yayın linkiniz hatalı veya desteklenmiyor.</string>
+
+    <!-- SSL error handling msg -->
+    <string name="time_just_now">Az önce</string>
+    <string name="time_a_minute_ago">1 dakika önce</string>
+    <string name="time_minute_ago">dakika önce</string>
+    <string name="time_an_hour_ago">1 saat önce</string>
+    <string name="time_hours_ago">saat önce</string>
+    <string name="time_yesterday">Dün</string>
+    <string name="time_a_week_ago">1 hafta önce</string>
+    <string name="time_weeks_ago">hafta önce</string>
+    <string name="time_a_month_ago">1 ay önce</string>
+    <string name="time_months_ago">ay önce</string>
+    <string name="time_a_year_ago">1 yıl önce</string>
+    <string name="time_years_ago">yıl önce</string>
+    <string name="time_day_ago">gün önce</string>
+    <string name="time_days_ago">gün önce</string>
+    <string name="action_share">Paylaş</string>
+    <string name="action_more">Devamını Oku</string>
+    <string name="action_download">İndir</string>
+    <string name="date_today">Bugün</string>
+    <string name="date_yesterday">Dün</string>
+    <string name="favorite_not_found">Kayıt bulunamadı</string>
+    <string name="action_close_app">Uygulamadan çıkmak istediğinize emin misiniz?</string>
+    <string name="feedback_sent">Geri bildiriminiz gönderildi.</string>
+
+    <!-- Rating dialog -->
+    <string name="rating_dialog_experience">Bizimle deneyimlerinizi paylaşın</string>
+    <string name="rating_dialog_remind_later">Sonra hatırlat</string>
+    <string name="rating_dialog_never">Asla</string>
+    <string name="rating_dialog_feedback_title">Geri Bildirim</string>
+    <string name="rating_dialog_submit">Gönder</string>
+    <string name="rating_dialog_cancel">İptal</string>
+    <string name="rating_dialog_suggestions">Neleri geliştirebileceğimizi bize söyleyin</string>
+    <string name="change_language">Dili Değiştir</string>
+    <string name="app_notifications">Bildirimler</string>
+    <string name="notification_sound">Bildirim Sesi</string>
+    <string name="unknown">Bilinmiyor</string>
+
+    <!-- Preview login & app list strings -->
+    <string name="app_version">Uygulama Versiyonu</string>
+    <string name="settings_saved">Ayarlarınız kaydedildi.</string>
+
+    <!-- Splash text -->
+    <string name="not_supported_on_preview">Bu özellik Preview uygulamasında desteklenmemektedir, kullanabilmek için APK üretip cihazınıza yüklemelisiniz.</string>
+    <string name="advertisement">Reklam</string>
+    <string name="ad">Reklam</string>
+
+    <!-- Connection Required strings -->
+    <string name="wifi_settings">Wi-Fi Ayarları</string>
+    <string name="mobile_settings">Mobil Veri</string>
+    <string name="try_again">Tekrar Dene</string>
+    <string name="connection_required_error">İnternet bağlantısı yok</string>
+
+
+    <!-- Form -->
+    <string name="required_field">Zorunlu alan</string>
+    <string name="success">Başarılı</string>
+    <string name="form_success">Form başarıyla gönderildi.</string>
+    <string name="form_failed">Form gönderilemedi.</string>
+    <string name="send_email">E-posta Gönder</string>
+
+
+    <string name="make_a_choice">Lütfen bir seçim yapınız</string>
+    <string name="select_a_date">Lütfen bir tarih seçiniz</string>
+    <string name="select_a_time">Lütfen bir zaman seçiniz</string>
+    <string name="text_validation_message">Lütfen bu alanı doldurunuz</string>
+
+    <string name="text_size_small">Küçük</string>
+    <string name="text_size_medium">Normal</string>
+    <string name="text_size_big">Büyük</string>
+    <string name="text_size_very_big">Çok Büyük</string>
+    <string name="application_restart_info">Yeni değişiklikleri uygulamak için uygulama yeniden başlatılacak</string>
+    <string name="change_font_size">Yazı Boyutu</string>
+    <string name="content_change_font_size">İçerik Yazı Boyutunu Değiştir</string>
+    <string name="image_size_validation">Resim boyutu 2,5 MB\'dan yüksek olamaz.</string>
+
+    <string name="logout_dialog">Çıkış yapmak istediğine emin misin ?</string>
+
+    <string-array name="text_size_list">
+        <item>Küçük</item>
+        <item>Normal</item>
+        <item>Büyük</item>
+        <item>Çok Büyük</item>
+    </string-array>
+
+
+    <string name="no_message_available">Mesaj bulunamadı.</string>
+
+
+    <string name="firebase_validation_failed">Sohbet ayarları geçersiz</string>
+
+    <string name="new_report_push">Yeni şikayet oluşturuldu.</string>
+    <string name="ban_push">Uygulama yetkilisi tarafından sohbetten engellendiniz.</string>
+    <string name="unban_push">Uygulama yetkilisi tarafından sohbetteki engeliniz kaldırıldı.</string>
+    <string name="authority_push">Size bir yetki atandı.</string>
+    <string name="authority_revoke_push">Yetkiniz kaldırıldı.</string>
+
+
+    <string name="permission_settings">İzinlere git</string>
+    <string name="permission_required">İzin gerekli!</string>
+    <string name="permission_required_description">Kişisel verilerinizin kendi cihazınızda depolanması, minimum düzeyde dosya transferi ile en üst düzeyde uygulama performansı sağlamak için %1$s uygulaması Depolama iznine ihtiyaç duymaktadır. Uygulamayı kullanabilmek için bu izne erişim vermeniz gerekmektedir. Bu izni vermek tamamen güvenlidir.</string>
+
+    <string name="permission_storage_denied_download">Dosya depolama izni olmadan dosyayı indiremezsiniz.</string>
+    <string name="permission_storage_denied_download_never">Dosya depolama izni olmadan dosyayı indiremezsiniz. Bu izni ayarlar bölümünden aktif edebilirsiniz.</string>
+    <string name="permission_storage_denied_ss">Dosya depolama izni olmadan ekran görüntüsü alamazsınız.</string>
+    <string name="permission_storage_denied_ss_never">Dosya depolama izni olmadan ekran görüntüsü alamazsınız. Bu izni ayarlar bölümünden aktif edebilirsiniz.</string>
+    <string name="permission_location_denied_map_user_location">Konum izni olmadan haritada konumunuzu göremezsiniz.</string>
+    <string name="permission_location_denied_map_user_location_never">Konum izni olmadan haritada konumunuzu göremezsiniz. Bu izni ayarlar bölümünden aktif edebilirsiniz.</string>
+
+
+    <string name="action_search">Ara</string>
+
+    <string name="notification_music">Müzik</string>
+
+
+    <string name="channel_detail_description">Açıklama</string>
+
+    <string name="user_agreement_settings">Kullanıcı Sözleşmesi</string>
+
+    <string name="in_app_purchase_not_available">Uygulama içi satın alma bu cihazda kullanılamıyor, Google Play Store\'un son versiyonunu kullandığınızdan emin olun</string>
+
+
+    <string name="in_app_purchase_subscription">Abonelik</string>
+    <string name="in_app_purchase_one_payment">Tek Ödeme</string>
+    <string name="in_app_purchase_life_time">Ömür Boyu</string>
+    <string name="in_app_purchase_more_information">Detayına Git</string>
+    <string name="in_app_purchase_buy_it">Satın Al</string>
+    <string name="in_app_purchase_more">Göster</string>
+
+
+    <string name="in_app_purchase_period_month">%1$s Aylık</string>
+    <string name="in_app_purchase_period_week">%1$s Haftalık</string>
+    <string name="in_app_purchase_period_yearly">Yıllık</string>
+
+
+    <string name="in_app_purchase_title">Satın Alma</string>
+    <string name="in_app_purchase_description">Aşağıda yer alan ürünlerden istediğinizi seçip detaylarını görebilir, satın alma işleminizi yapabilirsiniz</string>
+
+
+    <string name="info_module_not_supported_on_preview">%1$s modülü preview uygulamasında desteklenmemektedir.</string>
+    <string name="chat_module">Mesajlaşma</string>
+    <string name="ecommerce_module">E-ticaret</string>
+
+    <string name="chat_action_invalid_account">Bu hesap chat özelliği için uygun değil</string>
+
+
+    <string name="field_required">%s gerekli</string>
+
+
+    <string name="pdf_version_message">Bu içerik Android versiyonu 5 (Lollipop) altında olan cihazlarda desteklenmemektedir. İçeriği PDF formatında indirmek için "Tamam" butonuna tıklayınız.</string>
+    <string name="locale">tr</string>
+
+    <string name="action_save">Kaydet</string>
+
+
+    <string name="e_commerce_dialog_negative_button">Hayır, şimdi değil</string>
+
+</resources>

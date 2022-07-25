@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/video_broadcast_layout"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+        <VideoView
+            android:id="@+id/video_broadcast_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/my_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"/>
+
+        <ImageButton
+            android:id="@+id/play_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/transparent"
+            android:src="@drawable/stream_play_128"/>
+    </FrameLayout>

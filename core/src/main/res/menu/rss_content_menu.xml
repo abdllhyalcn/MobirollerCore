@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_bookmark_border_white_24dp"
+        android:title="@string/action_save"
+        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/action_share"-->
+<!--        android:icon="@drawable/ic_share_white_24dp"-->
+<!--        android:title="@string/action_share"-->
+<!--        app:showAsAction="always" />-->
+<!--    <item-->
+<!--        android:id="@+id/action_font_size"-->
+<!--        android:icon="@drawable/ic_format_size_white_24dp"-->
+<!--        android:title="@string/content_change_font_size"-->
+<!--        app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/a_More"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        android:title="@string/action_more"
+        app:showAsAction="always">
+        <menu></menu>
+    </item>
+</menu>

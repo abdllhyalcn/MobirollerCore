@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="OK">خوب</string>
+    <string name="form_module_action_send">ارسال</string>
+    <string name="common_error">با عرض پوزش، چیزی را اشتباه رفت. لطفا دوباره تلاش کنید</string>
+    <string name="yes">بله</string>
+    <string name="please_check_your_internet_connection">اتصال به اینترنت خود را بررسی کنید</string>
+    <string name="failed">ناموفق</string>
+    <string name="cancel">لغو</string>
+    <string name="change_language">تغییر زبان</string>
+    <string name="app_notifications">اطلاعیه</string>
+    <string name="notification_sound">هشدار از طریق صدا</string>
+    <string name="locale">fa</string>
+
+</resources>

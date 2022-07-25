@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- Item-based lists related attributes -->
+	<attr name="gdTextAppearance" format="reference" />
+	<attr name="gdTextAppearanceLarge" format="reference" />
+	<attr name="gdTextAppearanceMedium" format="reference" />
+	<attr name="gdTextAppearanceSmall" format="reference" />
+	<attr name="gdTextAppearanceSeparator" format="reference" />
+	
+	<!-- ActionBar related attributes -->
+	<attr name="gdActionBarTitleColor" format="color" />
+	<attr name="gdActionBarBackground" format="reference" />
+	<attr name="gdActionBarItemBackground" format="reference" />
+	<attr name="gdActionBarDividerDrawable" format="reference" />
+	<attr name="gdActionBarDividerWidth" format="dimension" />
+	<attr name="gdActionBarApplicationDrawable" format="reference" /> 
+	<attr name="gdActionBarHomeDrawable" format="reference" />
+	<attr name="gdActionBarItemColorNormal" format="reference|color" />
+	<attr name="gdActionBarItemColorAlt" format="reference|color" />
+	<attr name="gdActionBarMaxItems" format="integer" />
+	
+	<!-- PageIndicator related attributes -->
+	<attr name="gdPageIndicatorStyle" format="reference" />
+	
+	<!-- PageIndicator dots vs.. -->
+	<declare-styleable name="PageIndicator">
+		<attr name="dotCount" format="integer" />
+		<attr name="activeDot" format="integer" />
+		<attr name="dotDrawable" format="reference" />
+		<attr name="dotSpacing" format="dimension" />
+		<attr name="gravity">
+			<flag name="top" value="0x30" />
+			<flag name="bottom" value="0x50" />
+			<flag name="left" value="0x03" />
+			<flag name="right" value="0x05" />
+			<flag name="center_vertical" value="0x10" />
+			<flag name="center_horizontal" value="0x01" />
+			<flag name="center" value="0x11" />
+		</attr>
+		<attr name="dotType">
+			<enum name="single" value="0" />
+			<enum name="multiple" value="1" />
+		</attr>
+    </declare-styleable>
+    
+    <declare-styleable name="ImageGallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+	<declare-styleable name="CircleImageView">
+		<attr name="civ_border_width" format="dimension" />
+		<attr name="civ_border_color" format="color" />
+		<attr name="civ_border_overlay" format="boolean" />
+		<attr name="civ_fill_color" format="color" />
+	</declare-styleable>
+
+
+	<declare-styleable name="twowayview_TwoWayView">
+		<attr name="twowayview_layoutManager" format="string"/>
+	</declare-styleable>
+
+	<declare-styleable name="twowayview_GridLayoutManager">
+		<attr name="twowayview_numColumns" format="integer"/>
+		<attr name="twowayview_numRows" format="integer"/>
+	</declare-styleable>
+
+	<declare-styleable name="twowayview_SpacingItemDecoration">
+		<attr name="android:verticalSpacing" tools:ignore="ResourceName"/>
+		<attr name="android:horizontalSpacing" tools:ignore="ResourceName"/>
+	</declare-styleable>
+
+	<declare-styleable name="twowayview_DividerItemDecoration">
+		<attr name="android:divider" tools:ignore="ResourceName"/>
+		<attr name="twowayview_verticalDivider" format="reference"/>
+		<attr name="twowayview_horizontalDivider" format="reference"/>
+	</declare-styleable>
+
+	<declare-styleable name="twowayview_StaggeredGridViewChild">
+		<attr name="twowayview_span" format="integer"/>
+	</declare-styleable>
+
+	<declare-styleable name="twowayview_SpannableGridViewChild">
+		<attr name="twowayview_colSpan" format="integer"/>
+		<attr name="twowayview_rowSpan" format="integer"/>
+	</declare-styleable>
+
+	<declare-styleable name="twowayview_TwoWayLayoutManager">
+		<attr name="android:orientation" tools:ignore="ResourceName"/>
+	</declare-styleable>
+
+	<declare-styleable name="MaxHeightScrollView">
+		<attr name="maxHeight" format="dimension" />
+	</declare-styleable>
+
+	<declare-styleable name="FontStyle">
+		<attr name="font_87" format="dimension" />
+		<attr name="font_93" format="dimension" />
+		<attr name="font_10" format="dimension" />
+		<attr name="font_107" format="dimension" />
+		<attr name="font_113" format="dimension" />
+		<attr name="font_12" format="dimension" />
+		<attr name="font_13" format="dimension" />
+		<attr name="font_133" format="dimension" />
+		<attr name="font_14" format="dimension" />
+		<attr name="font_147" format="dimension" />
+		<attr name="font_15" format="dimension" />
+		<attr name="font_153" format="dimension" />
+		<attr name="font_16" format="dimension" />
+		<attr name="font_17" format="dimension" />
+		<attr name="font_173" format="dimension" />
+		<attr name="font_18" format="dimension" />
+		<attr name="font_187" format="dimension" />
+		<attr name="font_19" format="dimension" />
+		<attr name="font_20" format="dimension" />
+		<attr name="font_24" format="dimension" />
+	</declare-styleable>
+
+	<declare-styleable name="AvatarImageBehavior">
+		<attr name="finalYPosition" format="dimension"/>
+		<attr name="startXPosition" format="dimension"/>
+		<attr name="startToolbarPosition" format="dimension"/>
+		<attr name="startHeight" format="dimension"/>
+		<attr name="finalHeight" format="dimension"/>
+	</declare-styleable>
+
+    <declare-styleable name="CollapsingImageBehavior">
+        <attr name="collapsedTarget" format="reference" />
+    </declare-styleable>
+
+
+	<declare-styleable name="StatusViewScroller">
+		<attr name="circleRadius" format="dimension" />
+		<attr name="stepCount" format="integer" />
+		<attr name="currentCount" format="integer" />
+		<attr name="lineLength" format="dimension" />
+		<attr name="circleColor" format="color"/>
+		<attr name="circleStrokeColor" format="color"/>
+		<attr name="lineColor" format="color"/>
+		<attr name="textColorStatus" format="color"/>
+		<attr name="textSizeStatus" format="dimension"/>
+		<attr name="circleStrokeWidth" format="dimension"/>
+		<attr name="lineWidth" format="dimension"/>
+		<attr name="textColorLabels" format="color"/>
+		<attr name="textSizeLabels" format="dimension"/>
+		<attr name="circleColorType">
+			<flag name="none" value="0" />
+			<flag name="fill" value="1" />
+			<flag name="stroke" value="2" />
+			<flag name="fillStroke" value="3" />
+		</attr>
+		<attr name="circleColorIncomplete" format="color"/>
+		<attr name="circleColorCurrent" format="color"/>
+		<attr name="circleStrokeColorIncomplete" format="color"/>
+		<attr name="circleStrokeColorCurrent" format="color"/>
+		<attr name="lineColorIncomplete" format="color"/>
+		<attr name="lineColorCurrent" format="color"/>
+		<attr name="textColorLabelsIncomplete" format="color"/>
+		<attr name="textColorLabelsCurrent" format="color"/>
+		<attr name="textColorStatusIncomplete" format="color"/>
+		<attr name="textColorStatusCurrent" format="color"/>
+		<attr name="completeDrawable" format="reference"/>
+		<attr name="currentDrawable" format="reference"/>
+		<attr name="incompleteDrawable" format="reference"/>
+		<attr name="drawLabels" format="boolean"/>
+		<attr name="strictObeyLineLength" format="boolean"/>
+		<attr name="lineGap" format="dimension"/>
+		<attr name="minStatusAdjacentMargin" format="dimension"/>
+		<attr name="statusTopMargin" format="dimension"/>
+		<attr name="currentStepZoom" format="float"/>
+		<attr name="alignStatusWithCurrent" format="boolean"/>
+		<attr name="statusFont" format="reference"/>
+		<attr name="labelFont" format="reference"/>
+		<attr name="android:entries" />
+	</declare-styleable>
+
+
+	<declare-styleable name="ExpandableLayout">
+		<attr name="el_duration" format="integer" />
+		<attr name="el_expanded" format="boolean" />
+		<attr name="el_parallax" format="float" />
+		<attr name="android:orientation"/>
+	</declare-styleable>
+
+	<!--  coreui start  -->
+	<declare-styleable name="MobirollerTextView">
+		<attr name="colorType" format="enum" >
+			<enum name="primary" value="7"/>
+			<enum name="secondary" value="9"/>
+			<enum name="dark" value="2"/>
+			<enum name="header" value="3"/>
+			<enum name="text" value="4"/>
+			<enum name="paragraph" value="5"/>
+		</attr>
+		<attr name="sizeType" format="enum" >
+			<enum name="head_one" value="0"/>
+			<enum name="head_two" value="1"/>
+			<enum name="heading_one" value="2"/>
+			<enum name="heading_two" value="3"/>
+			<enum name="paragraph_one" value="4"/>
+			<enum name="regular" value="5"/>
+			<enum name="badge" value="6"/>
+			<enum name="badgeLarge" value="7"/>
+		</attr>
+	</declare-styleable>
+
+	<declare-styleable name="MobirollerImageView">
+		<attr name="tintType" format="enum" >
+			<enum name="primary" value="8"/>
+			<enum name="secondary" value="1"/>
+			<enum name="dark" value="2"/>
+			<enum name="header" value="3"/>
+			<enum name="text" value="4"/>
+			<enum name="paragraph" value="5"/>
+		</attr>
+	</declare-styleable>
+
+	<declare-styleable name="MobirollerBadgeView">
+		<attr name="backgroundColor" format="color"/>
+		<attr name="textColor" format="color"/>
+		<attr name="text" format="string"/>
+	</declare-styleable>
+
+
+	<declare-styleable name="MobirollerEmptyView">
+		<attr name="backgroundImageTintColor" format="color"/>
+		<attr name="backgroundImageIsOval" format="boolean"/>
+		<attr name="title" format="string"/>
+		<attr name="description" format="string"/>
+		<attr name="emptyIcon" format="reference"/>
+		<attr name="showNoContent" format="boolean"/>
+	</declare-styleable>
+
+	<declare-styleable name="MobirollerButton">
+		<attr name="mButtonBackgroundColor" format="color"/>
+		<attr name="mButtonTextColor" format="color"/>
+		<attr name="mButtonText" format="string"/>
+		<attr name="mButtonIcon" format="reference"/>
+		<attr name="mButtonHasRadius" format="boolean"/>
+		<attr name="mButtonColorType" format="enum" >
+			<enum name="primary" value="6"/>
+		</attr>
+	</declare-styleable>
+
+
+	<declare-styleable name="MobirollerFloatingActionButton">
+		<attr name="mFABColorType" format="enum" >
+			<enum name="primary" value="6"/>
+		</attr>
+	</declare-styleable>
+
+	<declare-styleable name="MobirollerTextInputEditText">
+		<attr name="inputEditTextMaxCount" format="integer"/>
+	</declare-styleable>
+
+	<declare-styleable name="MobirollerToolbar">
+		<attr name="mToolbarIsTransparent" format="boolean"/>
+	</declare-styleable>
+	<!--  coreui end  -->
+
+</resources>

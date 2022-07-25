@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:id="@+id/main_layout"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="@dimen/rss_classic_item_height"
+                                               android:orientation="horizontal"
+                                               android:paddingBottom="3.3dp"
+                                               android:paddingStart="6.6dp"
+                                               android:paddingEnd="6.6dp"
+                                               android:paddingTop="3.4dp"
+    >
+
+    <ImageView
+        android:id="@+id/rss_list_image"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:transitionName="rssImage"
+        android:src="@drawable/no_image"
+        app:layout_widthPercent="34%"/>
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/rss_list_image"
+        android:paddingStart="12.7dp"
+        android:paddingEnd="10.7dp"
+        android:background="@color/white"
+        app:layout_widthPercent="66%"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="#a9a9a9"
+            android:textStyle="bold"
+            android:paddingTop="9.3dp"
+            android:textSize="?attr/font_93"
+            android:id="@+id/rss_list_date"/>
+        <TextView
+            android:paddingTop="5dp"
+            android:id="@+id/rss_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="?attr/font_133"/>
+        <TextView
+            android:paddingTop="5dp"
+            android:id="@+id/rss_list_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="#a9a9a9"
+            android:textSize="?attr/font_10"/>
+    </LinearLayout>
+</androidx.percentlayout.widget.PercentRelativeLayout>
+
+

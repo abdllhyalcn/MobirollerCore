@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobiroller.core"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:targetSdkVersion="17"
+        tools:overrideLibrary="com.pierfrancescosoffritti.androidyoutubeplayer" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" /> <!-- Permission for Internet connection and WIFI status -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" /> <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- This app has permission to register and receive data message. -->
+    <permission
+        android:name=".permission.C2D_MESSAGE"
+        android:protectionLevel="signature"
+        tools:replace="android:name" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application>
+
+        <receiver
+            android:name="com.mobiroller.core.jcplayer.JcPlayerNotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.mobiroller.core.jcplayer.JcPlayerService"
+            android:stopWithTask="true" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="${applicationId}.firebaseinitprovider"
+            android:exported="false"
+            tools:node="remove" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <activity
+            android:name="com.mobiroller.core.activities.AuthorizationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppCompatMenu" />
+        <activity
+            android:name="com.mobiroller.core.activities.GenericActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@style/AppCompatMenu"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobiroller.core.activities.aveWebView"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppCompatMenu"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.mobiroller.core.activities.aveRSSView"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/TransitionAppCompat" />
+        <activity
+            android:name="com.mobiroller.core.activities.aveRssContentViewPager"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppCompatMenu" />
+        <activity
+            android:name="com.mobiroller.core.activities.ImagePagerActivity"
+            android:theme="@style/DragDismissTheme" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.mobiroller.core.activities.aveCallNowView"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppCompatMenu" />
+        <activity
+            android:name="com.mobiroller.core.activities.aveShareView"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.mobiroller.core.activities.aveFullScreenVideo"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppCompatMenu" />
+        <activity
+            android:name="com.mobiroller.core.activities.ConnectionRequired"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:noHistory="true"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/MaterialComponentsNoActionBarNoStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mobiroller.core.activities.PermissionRequiredActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/MaterialComponentsNoActionBarNoStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.mobiroller.core.activities.preview.NotSupportedActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/MaterialComponentsNoActionBarNoStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="com.mobiroller.core.services.RestoreAppActivity" />
+        <activity
+            android:name="com.mobiroller.core.activities.preview.StoragePermissionActivity"
+            android:theme="@style/AppCompatTransparent" />
+        <activity
+            android:name="com.mobiroller.core.activities.preview.LocationPermissionActivity"
+            android:theme="@style/AppCompatTransparent" />
+        <activity
+            android:name="com.mobiroller.core.activities.ActivityHandler"
+            android:noHistory="true"
+            android:theme="@style/AppCompatTransparentFix" />
+        <activity
+            android:name="com.mobiroller.core.activities.inapppurchase.InAppPurchaseDetailActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/InAppPurchaseAppCompatTransparent" />
+        <activity
+            android:name="com.mobiroller.core.activities.inapppurchase.InAppPurchaseActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/InAppPurchaseAppCompatTransparent" />
+        <activity
+            android:name="com.mobiroller.core.activities.preview.PreviewNotificationHandler"
+            android:theme="@style/AppCompatTransparent" />
+        <activity
+            android:name="com.mobiroller.core.activities.MobiRollerBadgeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/NoActionBarNoStatusBar" />
+        <activity android:name=".activities.GodModeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppCompatMenu" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCXRp5rkm2ZX_saC0aCGYZXSiNHrOHZ5O4" />
+
+        <service android:name="com.applyze.ApplyzeAnalyticsService" />
+
+        <receiver android:name="com.applyze.ApplyzeNetworkChangeReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver> <!-- [START firebase_service] -->
+
+        <service
+            android:name="com.mobiroller.core.services.ClosingService"
+            android:stopWithTask="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+        <service android:name="com.mobiroller.core.util.radio.RadioService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data  android:name="com.mobiroller.core.UtilManagerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+    </application>
+
+</manifest>
