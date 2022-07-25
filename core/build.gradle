@@ -83,6 +83,8 @@ dependencies {
 
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
 
+    implementation "androidx.startup:startup-runtime:1.1.1"
+
     implementation 'com.github.bumptech.glide:glide:4.13.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
 
@@ -181,7 +183,6 @@ dependencies {
 
     implementation "com.anjlab.android.iab.v3:library:2.0.0"
 }
-
 afterEvaluate {
     publishing {
         publications {
@@ -190,7 +191,7 @@ afterEvaluate {
 
                 groupId = 'com.github.abdllhyalcn'
                 artifactId = 'MobirollerCore'
-                version = '0.0.0'
+                version = '0.0.6'
             }
         }
     }
