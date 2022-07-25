@@ -7,20 +7,6 @@ plugins {
     id 'maven-publish'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'abdllhyalcn'
-                artifactId = 'mobirollerCore'
-                version = '0.0.1'
-            }
-        }
-    }
-}
-
 android {
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
@@ -194,4 +180,18 @@ dependencies {
     implementation "com.github.ybq:Android-SpinKit:1.2.0"
 
     implementation "com.anjlab.android.iab.v3:library:2.0.0"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.abdllhyalcn'
+                artifactId = 'MobirollerCore'
+                version = '0.0.0'
+            }
+        }
+    }
 }
