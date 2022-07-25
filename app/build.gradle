@@ -3,6 +3,20 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'abdllhyalcn'
+                artifactId = 'mobirollerCore'
+                version = '0.0.1'
+            }
+        }
+    }
+}
+
 android {
     compileSdk 32
 
